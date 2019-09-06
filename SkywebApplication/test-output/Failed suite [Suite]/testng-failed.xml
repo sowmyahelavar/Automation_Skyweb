@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <parameter name="Radius" value="100"/>
+  <parameter name="LatitudeText1" value="38 : 5.94674 N"/>
+  <parameter name="UserName" value="RCAS_PM"/>
+  <parameter name="Ident" value="abc"/>
+  <parameter name="LongitudeText1" value="122 : 15.95764 W"/>
+  <parameter name="Label" value="Geo1"/>
+  <parameter name="Region" value="Denmark"/>
+  <parameter name="Latitude" value="38 : 5.94674 N"/>
+  <parameter name="Longitude" value="122 : 15.95764 W"/>
+  <parameter name="Password" value="Skytrac3#"/>
+  <parameter name="Name" value="Georef"/>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="Sanity.Admin">
+        <methods>
+          <include name="EventNotification"/>
+          <include name="Overdue"/>
+          <include name="GeofenceNotification"/>
+          <include name="Geofence" invocation-numbers="0"/>
+          <include name="DVITextMessages"/>
+          <include name="Georeference" invocation-numbers="0"/>
+          <include name="FlightwatchNotification"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="ETANotification"/>
+        </methods>
+      </class> <!-- Sanity.Admin -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

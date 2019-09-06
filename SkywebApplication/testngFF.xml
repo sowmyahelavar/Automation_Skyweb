@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteFF">
+<parameter name="UserNameFF" value="rcas_mithun" />
+<parameter name="PasswordFF" value="Skytrac3#" />
+  <test thread-count="5" name="TestFF">
+  
+  <parameter name="Name" value="Georef" />
+<parameter name="Ident" value="abc" />
+<parameter name="Region" value="Denmark" />
+<parameter name="LatitudeText1" value="38 : 5.94674 N" />
+<parameter name="LongitudeText1" value="122 : 15.95764 W" />
+
+
+<parameter name="NameText1" value="Geofence" />
+<parameter name="DistanceText1" value="100" />
+<parameter name="LatitudeTextgeo" value="38 : 5.94674 N" />
+<parameter name="LongitudeTextgeo" value="122 : 15.95764 W" />
+   <classes>
+      <class name="Sanity.Flightfollowing"/>
+     
+    </classes>
+    
+  </test> <!-- TestFF -->
+</suite> <!-- SuiteFF -->

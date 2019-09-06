@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Sanity.Admin">
+        <methods>
+          <include name="EventNotification"/>
+          <include name="Overdue"/>
+          <include name="GeofenceNotification"/>
+          <include name="DVIPhonenumber"/>
+          <include name="Geofence"/>
+          <include name="testParameterWithXML"/>
+          <include name="Cockpit"/>
+          <include name="DVITextMessages"/>
+          <include name="Georeference"/>
+          <include name="FlightwatchNotification"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="ETANotification"/>
+        </methods>
+      </class> <!-- Sanity.Admin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

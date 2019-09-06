@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteFF]">
+  <parameter name="UserNameFF" value="rcas_mithun"/>
+  <parameter name="PasswordFF" value="Skytrac3#"/>
+  <test thread-count="5" name="TestFF(failed)">
+    <parameter name="DistanceText1" value="100"/>
+    <parameter name="LatitudeText1" value="38 : 5.94674 N"/>
+    <parameter name="NameText1" value="Geofence"/>
+    <parameter name="Ident" value="abc"/>
+    <parameter name="LongitudeText1" value="122 : 15.95764 W"/>
+    <parameter name="Region" value="Denmark"/>
+    <parameter name="LatitudeTextgeo" value="38 : 5.94674 N"/>
+    <parameter name="LongitudeTextgeo" value="122 : 15.95764 W"/>
+    <parameter name="Name" value="Georef"/>
+    <classes>
+      <class name="Sanity.Flightfollowing">
+        <methods>
+          <include name="terrainandobstacle"/>
+          <include name="terrainandobstacleff"/>
+          <include name="verifyHomepageTitle"/>
+        </methods>
+      </class> <!-- Sanity.Flightfollowing -->
+    </classes>
+  </test> <!-- TestFF(failed) -->
+</suite> <!-- Failed suite [SuiteFF] -->
